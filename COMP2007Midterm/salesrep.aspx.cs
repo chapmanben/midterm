@@ -11,7 +11,14 @@ namespace COMP2007Midterm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack){
+            }
+        }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
 
         }
+
     }
 }
