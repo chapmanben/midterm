@@ -18,19 +18,19 @@
             <div class="row-col-sm-2">
                 <label for="ddlProvince">Province:</label>
                 <asp:DropDownList ID="ddlProvince" runat="server" required>
-                    <asp:ListItem Value="AB" Text="Alberta" />
-                    <asp:ListItem Value="BC" Text="British Columbia" />
-                    <asp:ListItem Value="MB" Text="Manitoba" />
-                    <asp:ListItem Value="NB" Text="New Brunswick" />
-                    <asp:ListItem Value="NL" Text="Newfoundland and Labrador" />
-                    <asp:ListItem Value="NT" Text="Northwest Territories" />
-                    <asp:ListItem Value="NS" Text="Nova Scotia" />
-                    <asp:ListItem Value="NU" Text="Nunavut" />
-                    <asp:ListItem Value="ON" Text="Ontario" />
-                    <asp:ListItem Value="PE" Text="Prince Edward Island" />
-                    <asp:ListItem Value="QC" Text="Québec" />
-                    <asp:ListItem Value="SK" Text="Saskatchewan" />
-                    <asp:ListItem Value="YT" Text="Yukon" />
+                    <asp:ListItem Text="AB" Text="AB" />
+                    <asp:ListItem Text="BC" Text="BC" />
+                    <asp:ListItem Text="MB" Text="Bc" />
+                    <asp:ListItem Text="NB" Text="New Brunswick" />
+                    <asp:ListItem Text="NL" Text="Newfoundland and Labrador" />
+                    <asp:ListItem Text="NT" Text="Northwest Territories" />
+                    <asp:ListItem Text="NS" Text="Nova Scotia" />
+                    <asp:ListItem Text="NU" Text="Nunavut" />
+                    <asp:ListItem Text="ON" Text="Ontario" />
+                    <asp:ListItem Text="PE" Text="Prince Edward Island" />
+                    <asp:ListItem Text="QC" Text="Québec" />
+                    <asp:ListItem Text="SK" Text="Saskatchewan" />
+                    <asp:ListItem Text="YT" Text="Yukon" />
                 </asp:DropDownList>
             </div>
 

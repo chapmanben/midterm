@@ -22,6 +22,7 @@ namespace COMP2007Midterm
         {
             using (DefaultConnection db = new DefaultConnection())
             {
+                SalesRep s = new SalesRep();
                 decimal netIncome = Convert.ToDecimal(txtRevenue.Text) - Convert.ToDecimal(txtExpenses.Text);
                 bool manager = false;
 
@@ -29,8 +30,6 @@ namespace COMP2007Midterm
                 {
                     manager = true;
                 }
-                
-                SalesRep s = new SalesRep();
 
                 s.FirstName = txtFirstName.Text;
                 s.LastName = txtLastName.Text;
@@ -46,6 +45,5 @@ namespace COMP2007Midterm
                 Response.Redirect("salesreps.aspx");
             }
         }
-
     }
 }
