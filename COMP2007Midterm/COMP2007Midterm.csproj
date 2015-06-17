@@ -38,7 +38,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,7 +63,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="Models\SalesRepsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SalesRepsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SalesRepsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalesRepsModel.edmx</DependentUpon>
+      <LastGenOutput>SalesRepsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SalesRepsModel.edmx.diagram">
+      <DependentUpon>SalesRepsModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\SalesRepsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalesRepsModel.edmx</DependentUpon>
+      <LastGenOutput>SalesRepsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\COMP2007Midterm.pubxml" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -67,17 +92,60 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="salesrep.aspx" />
+    <Content Include="salesreps.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\SalesReps.cs">
+      <DependentUpon>SalesRepsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalesRepsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesRepsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalesRepsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesRepsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalesRepsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesRepsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salesrep.aspx.cs">
+      <DependentUpon>salesrep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salesrep.aspx.designer.cs">
+      <DependentUpon>salesrep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salesreps.aspx.cs">
+      <DependentUpon>salesreps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salesreps.aspx.designer.cs">
+      <DependentUpon>salesreps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
