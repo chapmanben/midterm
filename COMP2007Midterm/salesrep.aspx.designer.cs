@@ -13,13 +13,13 @@ namespace COMP2007Midterm {
     public partial class salesrep {
         
         /// <summary>
-        /// txtFirstMidName control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstMidName;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
         /// txtLastName control.
@@ -40,6 +40,42 @@ namespace COMP2007Midterm {
         protected global::System.Web.UI.WebControls.DropDownList ddlProvince;
         
         /// <summary>
+        /// txtRevenue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtRevenue;
+        
+        /// <summary>
+        /// RangeValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator2;
+        
+        /// <summary>
+        /// txtExpenses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtExpenses;
+        
+        /// <summary>
+        /// RangeValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator3;
+        
+        /// <summary>
         /// txtEnrollmentDate control.
         /// </summary>
         /// <remarks>
@@ -56,6 +92,15 @@ namespace COMP2007Midterm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+        
+        /// <summary>
+        /// cbxManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbxManager;
         
         /// <summary>
         /// btnSave control.
