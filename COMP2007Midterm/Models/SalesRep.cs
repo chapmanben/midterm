@@ -12,7 +12,7 @@ namespace COMP2007Midterm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class SalesReps
+    public partial class SalesRep
     {
         public int SalesRepID { get; set; }
         public string FirstName { get; set; }

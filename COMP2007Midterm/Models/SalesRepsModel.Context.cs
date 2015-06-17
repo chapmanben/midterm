@@ -25,6 +25,6 @@ namespace COMP2007Midterm.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<SalesReps> SalesReps { get; set; }
+        public DbSet<SalesRep> SalesReps { get; set; }
     }
 }

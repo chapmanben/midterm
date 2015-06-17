@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'c:\users\benjamin\documents\visual studio 2013\Projects\COMP2007Midterm\COMP2007Midterm\Models\SalesRepsModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Benjamin\Documents\Visual Studio 2013\Projects\COMP2007Midterm\COMP2007Midterm\Models\SalesRepsModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

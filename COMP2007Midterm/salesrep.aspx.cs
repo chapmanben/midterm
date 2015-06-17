@@ -15,8 +15,7 @@ namespace COMP2007Midterm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack){
-            }
+
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
@@ -30,12 +29,12 @@ namespace COMP2007Midterm
                 {
                     manager = true;
                 }
-
-                SalesReps s = new SalesReps();
+                
+                SalesRep s = new SalesRep();
 
                 s.FirstName = txtFirstName.Text;
                 s.LastName = txtLastName.Text;
-                s.Province = ddlProvince.SelectedValue;
+                s.Province = Convert.ToString(ddlProvince.SelectedValue);
                 s.Revenue = Convert.ToDecimal(txtRevenue.Text);
                 s.Expenses = Convert.ToDecimal(txtExpenses.Text);
                 s.NetIncome = netIncome;
@@ -43,6 +42,8 @@ namespace COMP2007Midterm
                 s.HireDate = Convert.ToDateTime(txtEnrollmentDate.Text);
 
                 db.SalesReps.Add(s);
+
+                Response.Redirect("salesreps.aspx");
             }
         }
 

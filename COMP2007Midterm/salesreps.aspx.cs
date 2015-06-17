@@ -23,9 +23,10 @@ namespace COMP2007Midterm
 
         protected void getSalesReps()
         {
-            using(DefaultConnection db = new DefaultConnection()){
-                var SalesReps  = from s in db.SalesReps
-                                 select s;
+            using (DefaultConnection db = new DefaultConnection())
+            {
+                var SalesReps = from s in db.SalesReps
+                                select s;
 
                 grdSalesReps.DataSource = SalesReps.ToList();
                 grdSalesReps.DataBind();

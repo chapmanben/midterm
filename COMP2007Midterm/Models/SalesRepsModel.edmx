@@ -27,7 +27,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SalesRepsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="SalesReps">
+        <EntityType Name="SalesRep">
           <Key>
             <PropertyRef Name="SalesRepID" />
           </Key>
@@ -42,7 +42,7 @@
           <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityContainer Name="DefaultConnection" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="SalesReps" EntityType="Self.SalesReps" />
+          <EntitySet Name="SalesReps" EntityType="SalesRepsModel.SalesRep" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -51,7 +51,7 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="SalesRepsModelStoreContainer" CdmEntityContainer="DefaultConnection">
           <EntitySetMapping Name="SalesReps">
-            <EntityTypeMapping TypeName="SalesRepsModel.SalesReps">
+            <EntityTypeMapping TypeName="SalesRepsModel.SalesRep">
               <MappingFragment StoreEntitySet="SalesReps">
                 <ScalarProperty Name="SalesRepID" ColumnName="SalesRepID" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
